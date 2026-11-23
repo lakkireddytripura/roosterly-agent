@@ -1,0 +1,212 @@
+{
+  "summary": {
+    "language": "10/10",
+    "category": "9/10",
+    "priority": "10/10",
+    "action": "9/10",
+    "tokens_in_per_ticket": 2706.4,
+    "tokens_out_per_ticket": 249.1
+  },
+  "rows": [
+    {
+      "id": "E01",
+      "got": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P3",
+        "action": "handoff"
+      },
+      "label": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P3",
+        "action": "reply"
+      },
+      "source": "downgraded",
+      "reason": "The customer is using an unsupported iOS version (15) while the app requires iOS 16 or later, which explains the crash. The help centre (F12) fully covers this requirement, so a direct reply is appropriate. Downgraded to handoff (verifier rejected: The draft incorrectly states that the iPhone 8 can be updated to the latest supported iOS version, whereas the iPhone 8 is only supported up to iOS 16 and cannot run the latest iOS ).",
+      "gloss": "Hi, thank you for reaching out. The Roosterly app requires iOS 16 or later to function correctly. Since your iPhone 8 is running iOS 15, the app will crash. Please update your device to the latest supported iOS version to resolve this issue. Kind regards, The Roosterly Support Team",
+      "label_reason": "English ticket. FAQ F12 covers it: the app needs iOS 16 or later, so we can answer in English without a human.",
+      "subject": "App crashes"
+    },
+    {
+      "id": "E02",
+      "got": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "label": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "source": "model",
+      "reason": "The customer wants to update their VAT number on invoices. The help centre (F06) explicitly states how to change the VAT number for future invoices under Settings -> Company details.",
+      "gloss": "Hi, you can update your new VAT number yourself under Settings → Company details. Enter the new number there and save it. This number will then be automatically used for all future invoices. If you have any further questions, please let us know. Regards, The Roosterly team",
+      "label_reason": "How to change invoice details is in FAQ F06. Reply in Dutch.",
+      "subject": "Btw-nummer"
+    },
+    {
+      "id": "E03",
+      "got": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "label": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "source": "model",
+      "reason": "The customer is requesting a refund for a month where the business was closed. Refunds and disputed charges are subject to an always-human rule and must be handled by a human agent.",
+      "gloss": "",
+      "label_reason": "Refund request ('terugkrijgen' = get back). Client rule: refunds always go to a human.",
+      "subject": "Terugbetaling"
+    },
+    {
+      "id": "E04",
+      "got": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "label": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "source": "model",
+      "reason": "The customer is asking a standard how-to question about swapping shifts, which is fully covered by FAQ F03.",
+      "gloss": "Hi, to swap a shift, open the relevant shift in the app and tap 'Offer swap'. Colleagues with the same role can accept this swap. The manager then approves the swap under Rota → Requests. Note: manager approval is on by default, but you can turn it off under Settings → Rota. Good luck!",
+      "label_reason": "Dutch how-to question about swapping shifts, answered by FAQ F03. Reply in Dutch.",
+      "subject": "Dienst ruilen"
+    },
+    {
+      "id": "E05",
+      "got": {
+        "language": "nl",
+        "category": "feature_request",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "label": {
+        "language": "nl",
+        "category": "feature_request",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "source": "model",
+      "reason": "The customer is requesting a new integration (Google Calendar) which is a feature request. The help centre (F10) explains how to handle ideas and feature requests, so a reply is appropriate.",
+      "gloss": "Hi, thanks for your suggestion! We read every idea. You can find this request on our public roadmap at roadmap.roosterly.nl, where you can also vote. Unfortunately, we cannot promise a delivery date for individual requests. Regards, the Roosterly team",
+      "label_reason": "Feature request (Google Calendar sync). Acknowledge in Dutch and point to the roadmap (F10).",
+      "subject": "Google Agenda"
+    },
+    {
+      "id": "E06",
+      "got": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "label": {
+        "language": "en",
+        "category": "bug",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "source": "model",
+      "reason": "The customer is experiencing a specific error ('Something went wrong') when publishing a rota, which blocks staff from seeing their schedule. The help centre does not contain troubleshooting steps for this specific error, so a human needs to investigate the backend logs.",
+      "gloss": null,
+      "label_reason": "One customer blocked from publishing: P2, needs an engineer.",
+      "subject": "Can't publish rota"
+    },
+    {
+      "id": "E07",
+      "got": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "label": {
+        "language": "nl",
+        "category": "billing",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "source": "model",
+      "reason": "The customer is asking for the price of the Plus plan for a specific number of employees, which is directly answered by FAQ F05.",
+      "gloss": "Hi, \n\nThe price for the Plus subscription is €6 per active employee per month. For 25 employees, this amounts to €150 per month (excluding VAT). \n\nKind regards,\nRoosterly Support",
+      "label_reason": "Price question answered by F05 (25 x €6 = €150 excl. VAT). Reply in Dutch.",
+      "subject": "Prijs Plus"
+    },
+    {
+      "id": "E08",
+      "got": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P4",
+        "action": "close"
+      },
+      "label": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P4",
+        "action": "close"
+      },
+      "source": "model",
+      "reason": "The ticket contains spam content unrelated to Roosterly support.",
+      "gloss": null,
+      "label_reason": "Spam (crypto offer): close it.",
+      "subject": "Investeringskans"
+    },
+    {
+      "id": "E09",
+      "got": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "label": {
+        "language": "nl",
+        "category": "other",
+        "priority": "P2",
+        "action": "handoff"
+      },
+      "source": "model",
+      "reason": "The customer is requesting access to their personal data under GDPR (AVG), which is an always-human rule requiring manual handling.",
+      "gloss": "",
+      "label_reason": "GDPR access request ('inzageverzoek', AVG = Dutch GDPR): always a human.",
+      "subject": "Inzageverzoek"
+    },
+    {
+      "id": "E10",
+      "got": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "label": {
+        "language": "nl",
+        "category": "question",
+        "priority": "P4",
+        "action": "reply"
+      },
+      "source": "model",
+      "reason": "The customer is asking about planned maintenance, which is a standard informational question fully covered by FAQ F11.",
+      "gloss": "Hi, you can always check the current status and planned maintenance windows at status.roosterly.nl. It will also state there if maintenance is planned for tonight. If you don't find any information there, there is likely no maintenance planned. Regards, the Roosterly team",
+      "label_reason": "Asks about planned maintenance tonight. Point to the status page (F11), in Dutch.",
+      "subject": "Onderhoud"
+    }
+  ]
+}
